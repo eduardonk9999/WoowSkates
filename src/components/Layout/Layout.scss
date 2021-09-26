@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wow-page-layout {
+  display: grid;
+  grid-template-columns: 360px auto 360px;
+  grid-auto-rows: 88px auto;
+  grid-template-areas:
+    "header header header"
+    "sbleft main sbright";
+}
+
+.wow-header {
+  grid-area: header;
+  background: yellow;
+}
+
+.wow-sbleft {
+  grid-area: sbleft;
+  background: blue;
+  padding: 40px;
+}
+
+.wow-sbright {
+  grid-area: sbright;
+  background: green;
+  padding: 40px;
+}
+
+.wow-main {
+  grid-area: main;
+  background: orange;
+  padding: 40px;
+}

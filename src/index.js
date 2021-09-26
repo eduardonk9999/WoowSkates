@@ -1,12 +1,6 @@
-import './styles/theme.scss'
-import Alert from './alert.js'
-class User {
-  createUser() {
-    console.log('created')
-    return;
-  }
-}
+import PageLayout from "./components/Layout"
 
-let user = new User
 
-user.createUser()
+const app = document.getElementById('app')
+
+app.appendChild(PageLayout)
